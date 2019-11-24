@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4883e350c32fb04196966a722936730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Testing2
+  nextScene: 
 --- !u!135 &135026825125210430
 SphereCollider:
   m_ObjectHideFlags: 1
