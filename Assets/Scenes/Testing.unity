@@ -257,9 +257,10 @@ GameObject:
   - component: {fileID: 702748318}
   - component: {fileID: 702748317}
   - component: {fileID: 702748316}
+  - component: {fileID: 702748320}
   m_Layer: 0
   m_Name: Level End
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,7 +306,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 702748315}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -330,6 +331,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &702748320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702748315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4883e350c32fb04196966a722936730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: Testing2
 --- !u!1 &714094881
 GameObject:
   m_ObjectHideFlags: 0
