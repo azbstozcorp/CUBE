@@ -9,6 +9,7 @@ public class ChangeLevel : MonoBehaviour {
     string nextScene;
 
     private void OnCollisionEnter(Collision collision) {
+        Debug.Log("Attempting to load " + nextScene);
         SceneManager.LoadScene(nextScene);
     }
 }
