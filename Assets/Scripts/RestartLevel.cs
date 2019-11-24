@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class RestartLevel : MonoBehaviour {
-	void Update () {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-	}
+    [SerializeField]
+    KeyCode keyRestartLevel;
+
+    void Update() {
+        if (Input.GetKey(keyRestartLevel)) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
