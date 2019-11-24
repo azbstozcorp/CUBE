@@ -8,7 +8,9 @@ public class ChangeLevel : MonoBehaviour {
     [SerializeField]
     string nextScene;
 
-	void Update () {
-        SceneManager.LoadScene(nextScene);
-	}
+    public static bool change;
+
+    void Update() {
+        if (change) SceneManager.LoadScene(nextScene);
+    }
 }
