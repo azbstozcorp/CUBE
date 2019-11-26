@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour {
     Rigidbody body;
 
     [SerializeField]
+    float spinSpeed = 0.2f;
+
+    [SerializeField]
     Vector3 forceForward;
     [SerializeField]
     Vector3 forceSideways;
@@ -25,6 +28,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
+        body.transform.rotation = new Quaternion(body.transform.rotation.x, body.transform.rotation.y + spinSpeed * Time.deltaTime, body.transform.rotation.z);
 
         if (Input.GetKey(keyForward)) body.velocity += forceForward;
         if (Input.GetKey(keyBackward)) body.velocity -= forceForward;
